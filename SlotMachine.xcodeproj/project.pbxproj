@@ -22,10 +22,18 @@
 		2C80530B21FA33F900E3BA99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C80530E21FA33F900E3BA99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C80531021FA33FA00E3BA99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C80531A21FA6D2300E3BA99 /* hideKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = hideKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2C8052FE21FA33F500E3BA99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C80531721FA6D2300E3BA99 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				2C80530121FA33F500E3BA99 /* SlotMachine.app */,
+				2C80531A21FA6D2300E3BA99 /* hideKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +93,23 @@
 			productReference = 2C80530121FA33F500E3BA99 /* SlotMachine.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2C80531921FA6D2300E3BA99 /* hideKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C80532721FA6D2300E3BA99 /* Build configuration list for PBXNativeTarget "hideKeyboard" */;
+			buildPhases = (
+				2C80531621FA6D2300E3BA99 /* Sources */,
+				2C80531721FA6D2300E3BA99 /* Frameworks */,
+				2C80531821FA6D2300E3BA99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hideKeyboard;
+			productName = hideKeyboard;
+			productReference = 2C80531A21FA6D2300E3BA99 /* hideKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +121,9 @@
 				ORGANIZATIONNAME = CentennialCollege;
 				TargetAttributes = {
 					2C80530021FA33F500E3BA99 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					2C80531921FA6D2300E3BA99 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -113,6 +142,7 @@
 			projectRoot = "";
 			targets = (
 				2C80530021FA33F500E3BA99 /* SlotMachine */,
+				2C80531921FA6D2300E3BA99 /* hideKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +158,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2C80531821FA6D2300E3BA99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,6 +174,13 @@
 			files = (
 				2C80530721FA33F500E3BA99 /* ViewController.swift in Sources */,
 				2C80530521FA33F500E3BA99 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C80531621FA6D2300E3BA99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +325,7 @@
 		2C80531421FA33FA00E3BA99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = SlotMachine/Info.plist;
@@ -299,7 +343,7 @@
 		2C80531521FA33FA00E3BA99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = SlotMachine/Info.plist;
@@ -309,6 +353,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ca.centennialcollege.SlotMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C80532821FA6D2300E3BA99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BULHRS882;
+				INFOPLIST_FILE = hideKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.centennialcollege.SlotMachine.hideKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C80532921FA6D2300E3BA99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BULHRS882;
+				INFOPLIST_FILE = hideKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.centennialcollege.SlotMachine.hideKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,6 +413,15 @@
 			buildConfigurations = (
 				2C80531421FA33FA00E3BA99 /* Debug */,
 				2C80531521FA33FA00E3BA99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C80532721FA6D2300E3BA99 /* Build configuration list for PBXNativeTarget "hideKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C80532821FA6D2300E3BA99 /* Debug */,
+				2C80532921FA6D2300E3BA99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
