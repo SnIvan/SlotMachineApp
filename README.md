@@ -1,3 +1,3 @@
 # SlotMachineApp
-mapd iOS Aztec Slot Machine
+mapd iOS course, Aztec Slot Machine
 
